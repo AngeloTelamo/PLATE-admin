@@ -1,0 +1,77 @@
+.formContainer{
+    background-color: rgba(255, 172, 116, 0.651);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .formWrapper{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 20px 60px;
+        border-radius: 20px;
+        align-items: center;
+
+        .plate{
+            font-size: 27px;
+            color: rgba(197, 92, 22, 0.651);
+            font-weight: bold;
+        }
+
+        .title{
+            font-size: 13px;
+            color: rgba(104, 102, 101, 0.651);
+            margin-bottom: 20px;
+        }
+
+        form{
+            gap: 15px;
+            display: flex;
+            flex-direction: column;
+
+            input{
+                padding: 10px;
+                border: none;
+                width: 250px;
+                border-bottom: 1px solid rgba(255, 172, 116, 0.651);
+
+                &::placeholder {
+                    color: #000000;
+                    opacity: 0.7;
+                    font-size: 13px;
+                }
+            }
+            
+            button {
+                background-color: rgba(194, 78, 0, 0.651);
+                color: white;
+                padding: 10px;
+                border: none;
+                font-size: 16px;
+                cursor: pointer;
+            }
+
+            label {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                font-size: 15px;
+                
+                .insertIcon{
+                    font-size: 35px;
+                    color: black;
+                }
+
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+        p{
+            margin-top: 15px;
+            font-size: 14px;
+        }
+    }
+}

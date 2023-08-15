@@ -1,0 +1,96 @@
+.sidebar {
+    flex: 1;
+    border-right: 0.5px solid rgba(226, 166, 126, 0.651) ;
+    min-height: 100vh;
+    background-color: white;
+
+    .top {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color:  rgb(255, 129, 25);
+        }
+    }
+
+    hr {
+        height: 0;
+        border: 0.5px solid rgba(226, 166, 126, 0.651)
+    }
+
+    .center {
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            .title {
+                margin-left: 10px;
+                font-size: 15px;
+                font-weight: 500;
+                color: rgb(105, 105, 105);
+                margin-top: 20px;
+                margin-bottom: 5px;
+            }
+
+            li {
+                margin-bottom: 10px;
+                display: flex;
+                align-items: center;
+                padding: 5px;
+                cursor: pointer;
+                padding-left: 20px;
+                color: black;
+
+                &:hover {
+                    background-color:rgba(255, 195, 149, 0.76);
+                    text-decoration: none;
+
+                    .icons {
+                        font-size: 30px;
+                        color: black;
+                    }
+                }
+            }
+
+            .icons {
+                font-size: 25px;
+                color: rgb(253, 158, 34);
+            }
+
+            span {
+                font-size: 18px;
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .bottom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+
+        .colorOption {
+            width: 20px;
+            height: 20px;
+            border-radius: 5px;
+            border: 1px solid rgb(253, 158, 34);
+            cursor: pointer;
+            margin-right: 15px;
+            padding: 5px;
+            
+            &:nth-child(1) {
+                background-color: white;
+            }
+            &:nth-child(2) {
+                background-color: black;
+            }
+
+        }
+    }
+}
