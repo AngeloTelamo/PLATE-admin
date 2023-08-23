@@ -1,5 +1,6 @@
 import "./register.scss";
 import InsertPhotoIcon from "@mui/icons-material/InsertPhoto";
+import { Link } from "react-router-dom";
 
 const Register = () => {
   return (
@@ -21,7 +22,12 @@ const Register = () => {
           <button>Sign Up</button>
         </form>
 
-        <p>Do you have an account? Login</p>
+        <div className="registerStyle">
+          <p>Do you have an account?</p>
+          <Link to='/Login' className="registerLink">
+            <p>Login</p>
+          </Link>
+        </div>
       </div>
     </div>
   );

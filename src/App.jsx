@@ -25,11 +25,11 @@ const App = () => {
             <Route path=":userID" element={<Single />} />
             <Route path="edit" element={<New inputs={userSample} />} />
           </Route>
-          <Route path="/products">
+          {/* <Route path="/products">
             <Route index element={<List />} />
             <Route path=":productID" element={<Single />} />
             <Route path="new" element={<New />} />
-          </Route>
+          </Route> */}
         </Routes>
       </BrowserRouter>
     </div>

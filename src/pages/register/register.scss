@@ -5,6 +5,19 @@
     align-items: center;
     justify-content: center;
 
+    .registerStyle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+
+        .registerLink {
+            font-weight: bold;
+            text-decoration: none;
+            color: black;
+        }
+    }
+
     .formWrapper{
         display: flex;
         flex-direction: column;

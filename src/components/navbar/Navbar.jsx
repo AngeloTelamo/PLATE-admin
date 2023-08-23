@@ -3,20 +3,21 @@ import SearchIcon from "@mui/icons-material/Search";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
 import NotificationsIcon from "@mui/icons-material/Notifications";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div className="navbar">
       <div className="wrapper">
         <div className="search">
-          <input type="text" placeholder="Search...."></input>
-          <SearchIcon />
         </div>
         <div className="items">
-          <div className="item">
-            <ChatBubbleOutlineIcon className="icons" />
-            <div className="counter">1</div>
-          </div>
+          <Link to='/message'>
+            <div className="item">
+              <ChatBubbleOutlineIcon className="icons" />
+              <div className="counter">1</div>
+            </div>
+          </Link>
           <div className="item">
             <NotificationsIcon className="icons" />
             <div className="counters">3</div>

@@ -22,8 +22,10 @@ const Sidebar = () => {
         <ul>
           <p className="title">MAIN</p>
           <li>
-            <DashboardIcon className="icons" />
-            <span> Dashboard </span>
+            <Link to='/' className="linkStyle">
+              <DashboardIcon className="icons" />
+              <span> Dashboard </span>
+            </Link>
           </li>
           <p className="title">LIST</p>
           <Link to="/users" style={{ textDecoration: "none" }}>
@@ -51,20 +53,22 @@ const Sidebar = () => {
             <SettingsIcon className="icons" />
             <span> Setings </span>
           </li> */}
-          <li>
-            <AccountBoxIcon className="icons" />
-            <span> Profile </span>
-          </li>
+          <Link to="/Profile" style={{ textDecoration: "none" }}>
+            <li>
+            < AccountBoxIcon className="icons" />
+              <span style={{ color: "black " }}> Profile </span>
+            </li>
+          </Link>
           <li>
             <LogoutIcon className="icons" />
             <span> Logout </span>
           </li>
         </ul>
       </div>
-      <div className="bottom">
+      {/* <div className="bottom">
         <div className="colorOption"></div>
         <div className="colorOption"></div>
-      </div>
+      </div> */}
     </div>
   );
 };

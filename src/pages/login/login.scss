@@ -1,0 +1,27 @@
+.formContainer {
+    .formWrapper{
+
+        .link {
+            width: 100%;
+            background-color: rgba(194, 78, 0, 0.651);
+            color: white;
+            padding: 10px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .reigsterUp{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+
+            .registerStyle{
+                font-weight: bold;
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}
