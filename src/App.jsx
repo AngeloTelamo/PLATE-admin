@@ -14,17 +14,23 @@ const App = () => {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" />
-          <Route index element={<Home />} />
+          <Route path= "/"/>
+          
+          <Route index element={<Login />} />
+          <Route path ='register'element= {<Register/>}/>
           <Route path="login" element={<Login />} />
+          <Route path="home" element={<Home />} />
           <Route path="message" element={<ChatHome />} />
           <Route path="register" element={<Register />} />
           <Route path="profile" element={<Profile />} />
-          <Route path="/users">
+          
+
+          <Route path="/users"> 
             <Route index element={<List />} />
             <Route path=":userID" element={<Single />} />
             <Route path="edit" element={<New inputs={userSample} />} />
           </Route>
+
           {/* <Route path="/products">
             <Route index element={<List />} />
             <Route path=":productID" element={<Single />} />

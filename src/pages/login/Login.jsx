@@ -1,6 +1,8 @@
 import "./login.scss";
 import { Link } from "react-router-dom";
 
+
+
 const Login = () => {
   return (
     <div className="formContainer">
@@ -11,7 +13,7 @@ const Login = () => {
           <input placeholder="Email" type="email"></input>
           <input placeholder="Password" type="password"></input>
 
-          <Link to="/">
+          <Link to="/home"> 
             <button className="link">Sign In</button>
           </Link>
         </form>
@@ -19,7 +21,7 @@ const Login = () => {
         <div className="reigsterUp">
           <p>Don't have an account?</p>
           <Link to='/Register' className="registerStyle">
-            <p >Register</p>
+            <p>Register</p>
           </Link>
         </div>
       </div>

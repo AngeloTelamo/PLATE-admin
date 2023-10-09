@@ -14,7 +14,7 @@
         .registerLink {
             font-weight: bold;
             text-decoration: none;
-            color: black;
+            color: blue;
         }
     }
 
@@ -57,6 +57,7 @@
             }
             
             button {
+                width: 100%;
                 background-color: rgba(194, 78, 0, 0.651);
                 color: white;
                 padding: 10px;

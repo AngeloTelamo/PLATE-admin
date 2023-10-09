@@ -59,10 +59,14 @@ const Sidebar = () => {
               <span style={{ color: "black " }}> Profile </span>
             </li>
           </Link>
+
+          <Link to='/Login' style={{ textDecoration: "none"}}>
           <li>
             <LogoutIcon className="icons" />
             <span> Logout </span>
           </li>
+          </Link>
+
         </ul>
       </div>
       {/* <div className="bottom">
