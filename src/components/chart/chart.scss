@@ -1,0 +1,17 @@
+.chart {
+    flex: 4;
+    box-shadow: -1px 0px 16px -1px rgba(0,0,0,0.5);
+    border-radius: 20px;
+    padding: 10px;
+
+    .title {
+        font-size: 20px;
+        color: gray;
+        font-weight: 400;
+        margin-bottom: 5px;
+    }
+
+    .cartGrid{
+        stroke: rgb(201, 198, 198);
+    }
+}

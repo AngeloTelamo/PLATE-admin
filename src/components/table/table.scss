@@ -1,0 +1,46 @@
+.table {
+    .tableCells {
+        text-align: center;
+    }
+
+    .bgTable {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+
+        &.Approved {
+            color: green;
+            background-color: rgba(15, 97, 15, 0.212);
+        }
+
+        &.Pending {
+            color: rgba(134, 95, 43, 0.616);
+            background-color: rgba(245, 213, 154, 0.692);
+        }
+
+        &.Cancel {
+            color: rgba(105, 14, 14, 0.616);
+            background-color: rgba(235, 181, 181, 0.692);
+        }
+
+        .status {
+            margin: 5px;
+            border-radius: 10px;
+        }
+
+        .orange-button {
+            color: #ff6700; // Set the text color to orange
+        }
+    }
+
+    .pagination-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+
+        .custom-pagination {
+            color: #ff6700; // Set the color to ff6700
+        }
+    }
+}
